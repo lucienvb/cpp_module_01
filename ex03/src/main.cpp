@@ -1,5 +1,6 @@
 #include <Weapon.hpp>
 #include <HumanA.hpp>
+#include <HumanB.hpp>
 
 int main()
 {
@@ -10,23 +11,15 @@ int main()
 		bob.attack();
 		club.setType("some other type of club");
 		bob.attack();
-//	}
-//	{
-//		Weapon club = Weapon("crude spiked club");
-//		HumanB jim("Jim");
-//		jim.setWeapon(club);
-//		jim.attack();
-//		club.setType("some other type of club");
-//		jim.attack();
 	}
+	{
+		Weapon club = Weapon("crude spiked club");
+		HumanB jim("Jim");
+		jim.setWeapon(club);
+		jim.attack();
+		club.setType("some other type of club");
+		jim.attack();
+	}
+//	system("leaks voilence");
 	return 0;
 }
-
-//int	main(void)
-//{
-//	Weapon		club = Weapon("crude spiked club");
-//	std::string	club;
-//
-//	person.setType("club");
-//
-//}
