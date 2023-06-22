@@ -20,7 +20,7 @@ BUILD_DIR		:= build
 INCLUDE_DIR		:= include
 RM				:= rm -rvf
 
-HEADERS			= $(INCLUDE_DIR)/info.hpp
+HEADERS			= $(INCLUDE_DIR)/Zombie.hpp
 CC				= c++
 
 ################################################################################
@@ -41,7 +41,10 @@ endif
 
 # Source files
 SRC = \
-  src/main.cpp
+  src/main.cpp \
+  src/Zombie.cpp \
+  src/newZombie.cpp \
+  src/randomChump.cpp
 
 TEST_SRC =
 
