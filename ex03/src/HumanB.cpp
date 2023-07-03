@@ -1,5 +1,7 @@
 #include <HumanB.hpp>
 
+// constructor with initialization of name and weapon
+// to nullptr (because weapon is a pointer)
 HumanB::HumanB(const std::string& name) {
 	_name = name;
 	_weapon = nullptr;
@@ -8,7 +10,7 @@ HumanB::HumanB(const std::string& name) {
 HumanB::~HumanB() {
 }
 
-void	HumanB::attack() {
+void	HumanB::attack() const {
 	if (_weapon != nullptr)
 	{
 		std::cout << _name << " attacks with their "

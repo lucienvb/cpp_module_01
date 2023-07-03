@@ -3,6 +3,12 @@
 
 #include <Weapon.hpp>
 
+// This is a class containing a constructor (with name and
+// weapon initialization), destructor and one method:
+// - attack
+// It also has to private variables:
+// - name
+// - weapon with a reference
 class	HumanA {
 public:
 	HumanA(const std::string& name, const Weapon& type);
