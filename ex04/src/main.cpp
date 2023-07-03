@@ -1,5 +1,21 @@
 #include <info.hpp>
 
+// To read from a file `std::ifstream variableName("infile.txt")` can
+// be used followed by the `.is_open()` function.
+// `.tellg` can be used in combination with `.seekg to check whether
+// a file is or isn't empty.
+
+// To create a file to write to `std::ofstream	variableName("outfile.txt")`
+// can be used, again followed by `.is_open()`.
+
+// `std::getline` is used to read lines.
+// `.find` is used to locate a possible s1 (searchStr) while it continuously validates
+// if it hasn't met the last character of the line.
+// When a match is found the s1 is being replaced by s2 (replaceStr) using `.replace`.
+
+// The modified lines are being written to the outfile.
+// Finally the infile and outfile are closed.
+
 int	main(int argc, char **argv) {
 	std::ofstream	outputFile("outfile.txt");
 	std::ifstream	inputFile(argv[1]);
