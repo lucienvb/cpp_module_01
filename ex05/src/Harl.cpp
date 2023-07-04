@@ -26,15 +26,19 @@ void	Harl::error(void) {
 	std::cout << "This is unacceptable! I want to speak to the manager now." << std::endl;
 }
 
+// This function is used to get the complainFunction of choice.
+// It uses a switch-case statement on the first character of the
+// string and returns the corresponding function. When the first
+// character is invalid, a nullptr is returned.
 Harl::complainFunction	Harl::getComplainFunction(const std::string& level) {
-	switch (level[0]) {
-		case 'd':
+	switch (level.at(0)) {
+		case 'D':
 			return (&Harl::debug);
-		case 'i':
+		case 'I':
 			return (&Harl::info);
-		case 'w':
+		case 'W':
 			return (&Harl::warning);
-		case 'e':
+		case 'E':
 			return (&Harl::error);
 		default:
 			return (nullptr);
@@ -42,6 +46,9 @@ Harl::complainFunction	Harl::getComplainFunction(const std::string& level) {
 
 }
 
+// getComplainFunction is used for getting the given complain
+// function. If this isn't a nullptr it is executed. Otherwise,
+// it will output an error message.
 void	Harl::complain(std::string level) {
 	complainFunction	complainFunc = getComplainFunction(level);
 

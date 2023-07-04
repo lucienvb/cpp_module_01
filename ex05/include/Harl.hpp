@@ -5,6 +5,10 @@
 #include <iostream>
 #include <string>
 
+// In this class the key `using` is used to create an alias for
+// a function pointer type.
+// In the following line this function pointer type is used to get
+// the complainFunction of choice.
 class	Harl {
 public:
 	Harl();
