@@ -4,6 +4,8 @@
 #include <string>
 #include <iostream>
 
+// Constructor, constructor with name, destructor and method
+// that prints a message.
 class Zombie {
 public:
 

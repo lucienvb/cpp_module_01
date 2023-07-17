@@ -2,6 +2,9 @@
 
 Zombie	*zombieHorde(int N, std::string name);
 
+// 1) Creates a horde using zombieHorde function
+// 2) Calling print method for all zombies in zombieHorde
+// 3) Deleting zombieHorde
 int	main(void)
 {
 	std::string	name = "zombieName";
