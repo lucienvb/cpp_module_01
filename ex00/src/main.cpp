@@ -10,5 +10,6 @@ int	main(void) {
 	z->announce();
 	delete z;
 	randomChump("randomChump");
+//	system("leaks zombie");
 	return (0);
 }
