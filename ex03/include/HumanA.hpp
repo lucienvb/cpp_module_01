@@ -6,7 +6,8 @@
 // This is a class containing a constructor (with name and
 // weapon initialization), destructor and one method:
 // - attack
-// It also has to private variables:
+//
+// It also has the private variables:
 // - name
 // - weapon with a reference
 class	HumanA {

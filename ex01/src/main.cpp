@@ -15,5 +15,6 @@ int	main(void)
 	for (uint32_t i = 0; i < N; i++)
 		horde[i].announce();
 	delete[] horde;
+//	system("leaks zombies");
 	return (0);
 }

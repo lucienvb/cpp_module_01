@@ -14,7 +14,7 @@
 // When a match is found the s1 is being replaced by s2 (replaceStr) using `.replace`.
 
 // The modified lines are being written to the outfile.
-// Finally the infile and outfile are closed.
+// Finally, the infile and outfile are closed.
 
 int	main(int argc, char **argv) {
 	std::ofstream	outputFile("outfile.txt");

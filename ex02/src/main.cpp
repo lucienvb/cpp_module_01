@@ -15,5 +15,6 @@ int main(void) {
     std::cout << "str: " << str << std::endl;
     std::cout << "strPTR: " << strPTR << std::endl;
     std::cout << "strREF: " << strREF << std::endl;
+//	system("leaks brain");
     return (0);
 }

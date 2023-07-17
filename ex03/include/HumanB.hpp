@@ -7,6 +7,7 @@
 // initialization), destructor and two methods:
 // - attack
 // - setWeapon
+//
 // It also has to private variables:
 // - name
 // - weapon with a pointer because it does not need to be set
