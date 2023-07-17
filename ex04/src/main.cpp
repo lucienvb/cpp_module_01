@@ -17,13 +17,13 @@
 // Finally, the infile and outfile are closed.
 
 int	main(int argc, char **argv) {
-	std::ofstream	outputFile("outfile.txt");
 	std::ifstream	inputFile(argv[1]);
 	std::string		searchStr = argv[2];
 	std::string		replaceStr = argv[3];
 
 	if (argc != 4)
 		return 0;
+	std::ofstream	outputFile("outfile.txt");
 	if (inputFile.is_open() && outputFile.is_open())
 	{
 		inputFile.seekg(0, std::ios::end);
@@ -46,5 +46,6 @@ int	main(int argc, char **argv) {
 	}
 	else
 		std::cout << "Failed to open the file or insufficient rights." << std::endl;
+//	system("leaks sed");
 	return 0;
 }
